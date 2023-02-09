@@ -144,7 +144,13 @@ function Home({ darkMode, setDarkMode }) {
             variant='outlined'
             color='secondary'
           >
-            Login
+            Log In
+          </Button>
+          <Button
+            variant='outlined'
+            color='secondary'
+          >
+            Register
           </Button>
         </Toolbar>
       </AppBar>
