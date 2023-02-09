@@ -22,9 +22,9 @@ import { useTheme } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 
-import Apps from '@material-ui/icons/Apps';
-import MoreVert from '@material-ui/icons/MoreVert';
-import VideoCall from '@material-ui/icons/VideoCall';
+// import Apps from '@material-ui/icons/Apps';
+// import MoreVert from '@material-ui/icons/MoreVert';
+// import VideoCall from '@material-ui/icons/VideoCall';
 
 import HomeIcon from '@material-ui/icons/Home';
 import Subscriptions from '@material-ui/icons/Subscriptions';
@@ -32,6 +32,7 @@ import Whatshot from '@material-ui/icons/Whatshot';
 
 import VideoLibrary from '@material-ui/icons/VideoLibrary';
 import History from '@material-ui/icons/History';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 import AddCircle from '@material-ui/icons/AddCircle';
 
@@ -198,7 +199,7 @@ function Home({ darkMode, setDarkMode }) {
               <List>
                 <ListItem button classes={{ root: classes.listItem }}>
                   <ListItemIcon>
-                    <VideoLibrary />
+                    <FavoriteIcon />
                   </ListItemIcon>
                   <ListItemText
                     classes={{
