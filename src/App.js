@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import { ThemeProvider, createMuiTheme, makeStyles } from '@material-ui/core';
+import {Route, Link} from 'react-router-dom'
+import { BrowserRouter as Router, Routes } from 'react-router-dom';
+
+
 
 import Home from './Home';
+import ProgramInfo from './pages/ProgramInfo';
+// import {Route, Link} from 'react-router-dom'
 
 const useStyles = makeStyles({
   root: {},
@@ -31,9 +37,14 @@ function App() {
   const classes = useStyles();
 
   return (
-    <ThemeProvider theme={theme}>
-      <Home darkMode={darkMode} setDarkMode={setDarkMode} />
-    </ThemeProvider>
+    <div className="App">
+      <ThemeProvider theme={theme}>
+        <Home darkMode={darkMode} setDarkMode={setDarkMode} />
+      </ThemeProvider>
+      {/* <ProgramInfo />
+      <Route exact path = " /" component = {Home} /> */}
+      {/* <Route exact path = " /ProgramInfo" component = {ProgramInfo} /> */}
+    </div>
   );
 }
 
